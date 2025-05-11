@@ -1,0 +1,361 @@
+/* styles.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('https://static.vecteezy.com/system/resources/previews/006/625/421/non_2x/help-care-with-insurance-house-concept-businessman-hand-holding-mini-wooden-home-or-house-model-in-the-background-planning-buys-real-estate-planning-to-buy-property-concept-of-choosing-the-best-free-photo.jpg') center/cover no-repeat;
+}
+
+/* Header Styles */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96%;
+    background: transparent; /* Make it transparent */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none; /* Remove shadow */
+    z-index: 10; /* Ensures it stays on top */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #243f5b; /* Bronze color */
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn {
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+.signup-btn {
+    background: #243f5b;
+    color: #fff;
+}
+
+.login-btn:hover {
+    background: #243f5b;
+    color: #fff;
+}
+
+.signup-btn:hover {
+    background: #003e81;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .auth-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Sign-Up Form Styling */
+.signup-container {
+    margin-top: 100px; /* Adjusted for navbar spacing */
+    background: none;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: none;
+    text-align: center;
+    animation: slideDown 1s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+}
+
+.signup-container h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: -80px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #243f5b;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #243f5b;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 430px;
+    padding: 0.7rem;
+    background-color: #243f5b;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0e2339;
+    transform: scale(1.05);
+}
+
+/* Footer Links */
+.signup-footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    position: absolute; 
+    bottom: -90px; 
+    left: 620px; 
+}
+
+.signup-footer p {
+    color: #ffffff;
+}
+
+.signup-footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-footer a:hover {
+    color: #007bff;
+}
+
+/* Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('https://stuartfamilydental.com/wp-content/uploads/2018/02/insurance-footer-background.png') center/cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-container h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding-left: 110px;
+    text-align: left;
+}
+
+.footer-container ul li {
+    margin: 8px 0;
+}
+
+.footer-container ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: #007bff;
+}
+
+.footer-newsletter input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-newsletter button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;  /* Makes it a block element */
+    margin: 10px; /* Centers it horizontally */
+}
+
+.footer-newsletter button:hover {
+    background: gray;
+    color: white;
+}
+
+.footer-newsletter p {
+    color: #ddd;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    text-align: center;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container div {
+        margin-bottom: 30px;
+    }
+
+    .footer-newsletter input,
+    .footer-newsletter button {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 10px;
+    }
+    
+    .search-box input, .search-box select, .search-box button {
+        width: 90%;
+        margin: 5px 0;
+    }
+}

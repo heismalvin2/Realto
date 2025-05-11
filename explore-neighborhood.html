@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realto | Home</title>
+    <link rel="stylesheet" href="explore-neighborhood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> ~Realto~ </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="explore-neighborhood.html">Explore</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="agent.html">Agents</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="neighborhood-banner">
+        <div class="neighborhood-banner-content">
+            <h1>Find Your Ideal Neighborhood</h1>
+            <p>Explore communities that fit your lifestyle and preferences.</p>
+            <form class="neighborhood-search-form">
+                <input type="text" placeholder="Enter a city or neighborhood" class="search-input">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="nigeria-states">
+        <h2>Explore Nigerian States</h2>
+        <div class="states-grid">
+            <div class="state" id="lagos">
+                <img src="https://lh6.googleusercontent.com/proxy/CzrUQorGCRIRmL7qj9Y9apnY2pKE1NwBjbWqGi7kQ3_QDPPU68kCd_hgIPd3BpNP8k9px-2qvimaIjtOLrEF2EYlPO2WjB-vASvcCdqpfFx0tj0oHPuoEWwcQzy45s4_ypfCnMYkK7N1Hx0Dvuksq3GA" alt="Lagos">
+                <h3>Lagos</h3>
+                <p>The economic hub of Nigeria, known for its beaches, nightlife, and commercial centers.</p>
+            </div>
+            <div class="state" id="abuja">
+                <img src="https://www.exploreabuja.ng/wp-content/uploads/2022/12/aerial-view-photo-of-abuja-city-img.jpeg" alt="Abuja">
+                <h3>Abuja</h3>
+                <p>The capital city, known for its beautiful landscapes, government institutions, and modern architecture.</p>
+            </div>
+            <div class="state" id="rivers">
+                <img src="https://www.cometonigeria.com/wp-content/uploads/2011/03/River_state_PH2.jpg" alt="Rivers">
+                <h3>Rivers</h3>
+                <p>Famous for its oil-rich economy and the vibrant city of Port Harcourt.</p>
+            </div>
+            <!-- Add more states similarly -->
+        </div>
+    </section>
+    
+    
+
+    <section class="neighborhood-stats">
+        <h2>Neighborhood Statistics</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-shield-alt"></i> <!-- Crime rate icon -->
+                </div>
+                <div class="stat-info">
+                    <h3>Crime Rate</h3>
+                    <p class="stat-value">Low</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-school"></i> <!-- School rating icon -->
+                </div>
+                <div class="stat-info">
+                    <h3>School Ratings</h3>
+                    <p class="stat-value">4.5/5</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-map-marker-alt"></i> <!-- Amenities icon -->
+                </div>
+                <div class="stat-info">
+                    <h3>Amenities</h3>
+                    <p class="stat-value">Parks, Shopping, Restaurants</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-properties">
+        <div class="container">
+            <h2 class="section-title">Featured Properties</h2>
+            <div class="properties-wrapper">
+                <div class="property-card">
+                    <img src="https://ruthsellslakeconroe.com/wp-content/uploads/2020/12/buying-a-luxury-home-1183x675.jpg" alt="Luxury Home">
+                    <div class="property-info">
+                        <h3>Luxury Home</h3>
+                        <p class="price">₦50,000,000</p>
+                        <a href="#" class="view-details">View Details</a>
+                        <div class="property-details hidden">
+                            <p class="description">This stunning luxury home features 5 bedrooms, a private pool, and breathtaking views.</p>
+                            <button class="inquiry-btn" onclick="window.location.href='speak-to-agent.html'">Start Your Inquiry</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://media.vrbo.com/lodging/35000000/34450000/34440600/34440585/e511def7.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Modern Apartment">
+                    <div class="property-info">
+                        <h3>Modern Apartment</h3>
+                        <p class="price">₦35,000,000</p>
+                        <a href="#" class="view-details">View Details</a>
+                        <div class="property-details hidden">
+                            <p class="description">A sleek modern apartment with top-tier amenities, smart home features, and city skyline views.</p>
+                            <button class="inquiry-btn" onclick="window.location.href='speak-to-agent.html'">Start Your Inquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="local-businesses">
+        <div class="container">
+            <h2 class="section-title">Popular Local Businesses</h2>
+            <div class="business-slider">
+                <div class="business-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIBO8YVmLAUMBae5IfO8tstN6cIEvjj-Fx3w&s" alt="Joe’s Coffee Shop">
+                    <div class="business-info">
+                        <h3>Joe’s Coffee Shop</h3>
+                        <p>Best coffee in town</p>
+                    </div>
+                </div>
+                <div class="business-card">
+                    <img src="https://res.cloudinary.com/dvjfemxbz/image/upload/c_scale,f_auto,q_60,w_1000/c231fe9e-13b0-4a5f-9467-da120142bb54_znjksq.png" alt="Luxury Gym">
+                    <div class="business-info">
+                        <h3>Luxury Gym</h3>
+                        <p>State-of-the-art fitness center</p>
+                    </div>
+                </div>
+                <div class="business-card">
+                    <img src="https://www.sunrisebakery.com/wp-content/uploads/2020/12/New-Project-8.jpg" alt="Sunrise Bakery">
+                    <div class="business-info">
+                        <h3>Sunrise Bakery</h3>
+                        <p>Freshly baked goods daily</p>
+                    </div>
+                </div>
+                <div class="business-card">
+                    <img src="https://tortoisepath.com/wp-content/uploads/2024/03/Elites-Bar-Lounge-Madina-Ghana-TortoisePathcom-jpeg.webp" alt="Elite Dine & Lounge">
+                    <div class="business-info">
+                        <h3>Elite Dine & Lounge</h3>
+                        <p>A high-end restaurant </p>
+                    </div>
+                </div>
+                <div class="business-card">
+                    <img src="https://media.timeout.com/images/103238852/750/562/image.jpg" alt="Amusement park">
+                    <div class="business-info">
+                        <h3>Amusement Park</h3>
+                        <p>Bring your kids and have fun</p>
+                    </div>
+                </div>
+                <div class="business-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMXIM-0zVVJUnGg-u8M-mFU1JCtRq-EebFw&s" alt="Urban Styles Boutique">
+                    <div class="business-info">
+                        <h3>Urban Styles Boutique</h3>
+                        <p>A trendy fashion store </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="neighborhood-videos">
+        <div class="container">
+            <h2 class="section-title">Neighborhood Video Walkthroughs</h2>
+            <p class="section-subtitle">Explore the area through immersive video tours.</p>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <iframe width="656" height="369" src="https://www.youtube.com/embed/fcq48J2CYQU" title="Downtown LAGOS NIGERIA - Discover the African megacity - From Balogun market to VI, Ikoyi and Lekki" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>Downtown City Tour of Lagos</h3>
+                </div>
+                <div class="video-card">
+                    <iframe width="656" height="369" src="https://www.youtube.com/embed/rfr7jNgUcPY" title="THE MOST SERENE ESTATE IN LEKKI LAGOS🇳🇬?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>Lekki Estates Walkthrough</h3>
+                </div>
+                <div class="video-card">
+                    <iframe width="656" height="369" src="https://www.youtube.com/embed/bbdxJqALgBI" title="ABUJA CITY AT NIGHT 😳 | THIS IS THE MOST ORGANIZED &amp; PLANNED CITY IN NIGERIA AT NIGHT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>Abuja City at Night</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="explore-neighborhood.html"> Explore</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Explore More</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="footer-socials">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates on real estate trends.</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Realto. All rights reserved.</p>
+    </footer>
+    <script src='explore-neighborhood.js'></script>
+</body>
+</html>

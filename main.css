@@ -1,0 +1,900 @@
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    top: 0;
+    left: 0;
+    width: 96%;
+    position: absolute;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10; /* Ensures the navbar stays above the video */
+    background: transparent; /* Removes background */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #002b58; /* Bronze color */
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.signup-btn {
+    background: #243f5b;
+    color: #fff;
+}
+
+.login-btn:hover {
+    background: #243f5b;
+    color: #fff;
+}
+
+.signup-btn:hover {
+    background: #003e81;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .auth-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        padding-bottom: 30px;
+        padding-top: 7px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Sends the video behind content */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    top: 42%;
+    transform: translateY(-50%);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 150px 20px;
+        background-position: center -80px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 15px;
+        background-position: center;
+        height: 500px;
+    }
+    .hero-content {
+        top: 30%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 100px 10px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+.search-box {
+    margin-top: 20px;
+}
+
+.search-btn {
+    border-radius: 5px;
+}
+
+.search-box input, .search-box select, .search-box button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.ad-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa;
+    padding: 50px 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ad-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.ad-content h2 {
+    font-size: 28px;
+    color: #be2323;
+    margin-bottom: 10px;
+}
+
+.ad-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.ad-btn {
+    display: inline-block;
+    background: #243f5b;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.ad-btn:hover {
+    background: #0056b3;
+}
+
+.ad-image {
+    flex: 1;
+    text-align: center;
+}
+
+.ad-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .ad-space {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ad-content, .ad-image {
+        max-width: 100%;
+    }
+
+    .ad-image img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+/* Real Estate Partners Section */
+.real-estate-partners {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+
+.real-estate-partners h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slider */
+.partner-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Slides */
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .real-estate-partners h2 {
+        font-size: 20px;
+    }
+
+    .slide img {
+        max-width: 120px;
+    }
+
+    .prev, .next {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .real-estate-partners h2 {
+        font-size: 18px;
+    }
+
+    .slide img {
+        max-width: 100px;
+    }
+
+    .prev, .next {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+.house-3d-viewer {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.house-3d-viewer h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.house-3d-viewer p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+model-viewer {
+    max-width: 100%;
+    border: 1px solid #ddd;
+}
+
+/* Neighborhood Highlights Section */
+.neighborhood-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 5%;
+    background: #f8f9fa;
+}
+
+.neighborhood-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.neighborhood-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.neighborhood-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.neighborhood-content ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.neighborhood-content ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.neighborhood-content ul li i {
+    color: #243f5b;
+    margin-right: 10px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #243f5b;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+    background: #0056b3;
+}
+
+/* Image & Map Container */
+.neighborhood-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.neighborhood-image img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .neighborhood-highlights {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .neighborhood-content {
+        max-width: 100%;
+    }
+
+    .neighborhood-content ul {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .neighborhood-image {
+        max-width: 100%;
+    }
+}
+
+
+.property-listings {
+    padding: 20px;
+    text-align: center;
+}
+
+.property-listings h2 {
+    font-size: 34px;
+}
+
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.property {
+    
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+    width: 300px;
+}
+
+.property:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.property img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #243f5b;
+}
+
+.market-overview {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.market-overview h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 34px;
+}
+
+.market-overview p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.market-overview table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.market-overview table th, 
+.market-overview table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.market-overview table th {
+    background: #333;
+    color: #fff;
+}
+
+.market-overview .top-gainer {
+    background: #e6f7e6;
+    color: #027a02;
+    font-weight: bold;
+}
+
+.market-overview .top-loser {
+    background: #fde8e8;
+    color: #d8000c;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .market-overview table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .market-overview th, .market-overview td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .market-overview h2 {
+        font-size: 20px;
+    }
+
+    .market-overview table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .market-overview th, .market-overview td {
+        padding: 6px;
+    }
+}
+
+button {
+    background: #243f5b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.featured-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 5%;
+    background: #ffffff;
+}
+
+.featured-stories, .other-reads {
+    flex: 1;
+}
+
+.featured-stories h2, .other-reads h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+}
+
+/* Stories */
+.story {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.story img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.story h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #333;
+}
+
+.story p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.story a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #243f5b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.story a:hover {
+    text-decoration: underline;
+}
+
+/* Other Reads */
+.read-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.read-item h3 {
+    font-size: 18.5px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.read-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: bold;
+    color: #243f5b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featured-section {
+        flex-direction: column;
+    }
+
+    .story img {
+        height: 150px;
+    }
+
+    .story h3, .read-item h3 {
+        font-size: 18px;
+    }
+}
+
+
+footer {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/022/527/474/non_2x/digital-tablet-and-a-hologram-of-modern-buildings-illustration-ai-generative-free-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-container h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding-left: 110px;
+    text-align: left;
+}
+
+.footer-container ul li {
+    margin: 8px 0;
+}
+
+.footer-container ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: #007bff;
+}
+
+.footer-newsletter input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-newsletter button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;  /* Makes it a block element */
+    margin: 10px; /* Centers it horizontally */
+}
+
+.footer-newsletter button:hover {
+    background: gray;
+    color: white;
+}
+
+.footer-newsletter p {
+    color: #ddd;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    text-align: center;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container div {
+        margin-bottom: 30px;
+    }
+
+    .footer-newsletter input,
+    .footer-newsletter button {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 10px;
+    }
+    
+    .search-box input, .search-box select, .search-box button {
+        width: 90%;
+        margin: 5px 0;
+    }
+}
+
+

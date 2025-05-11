@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realto | Home</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">~Realto~</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="explore-neighborhood.html"> Explore</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="agent.html">Agents</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                
+            </div>
+
+
+            
+        </nav>
+    </header>
+
+    <!-- Sign Up Form -->
+<div class="signup-container">
+    <h1>Create an Account</h1>
+    <form action="#" method="#" class="signup-form">
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+        </div>
+        
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group">
+            <label for="new-password">Create a New Password:</label>
+            <input id="new-password" name="new-password" placeholder="8+ lowercase letters" type="password" pattern="[a-z0-5]{8,}" required />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Re-type Password:</label>
+            <input 
+              id="confirm-password" 
+              name="confirm-password" 
+              type="password" 
+              pattern=".{8,}" 
+              title="Password must be at least 8 characters long." 
+              required 
+            />
+          </div> 
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <input type="submit" value="Sign Up" style="font-family: 'Times New Roman', Times, serif;">
+        </div>
+    </form>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="#">Rent</a></li>
+            <li><a href="explore-neighborhood.html"> Explore</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h3>Explore More</h3>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+        </div>
+        <div class="footer-socials">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get the latest updates on real estate trends.</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Realto. All rights reserved.</p>
+</footer>
+<script src='main.js'></script>
+</body>
+</html>

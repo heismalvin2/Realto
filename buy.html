@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realto | Home</title>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> ~Realto~ </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="explore-neighborhood.html">Explore</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="agent.html">Agents</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Property Search & Filters -->
+    <section class="property-search">
+        <div class="container-1">
+            <h2>Find Your Dream Property</h2>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search by location, city, or property name">
+                <select id="property-type">
+                    <option value="">Property Type</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="land">Land</option>
+                </select>
+                <select id="price-range">
+                    <option value="">Price Range</option>
+                    <option value="0-10000000">₦0 - ₦10M</option>
+                    <option value="10000000-50000000">₦10M - ₦50M</option>
+                    <option value="50000000-100000000">₦50M - ₦100M</option>
+                    <option value="100000000+">₦100M+</option>
+                </select>
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="property-listings">
+        <div class="container">
+    
+            <!-- Lagos Listings -->
+            <div class="property-card" data-location="lagos" data-type="apartment" data-price="45000000">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/291921337.jpg?k=16b68c4f59a366e9bb800e1e015240d91924774b002d81537a90a31359289613&o=&hp=1" alt="Luxury Apartment in Lagos">
+                <h3>Luxury Apartment in Lagos</h3>
+                <p>₦45,000,000 • 3 Beds • 2 Baths</p>
+                <p>Ikoyi, Lagos</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <div class="property-card" data-location="lagos" data-type="house" data-price="85000000">
+                <img src="https://www.landmall.ng/sites/default/files/styles/wide/public/2024-10/Screenshot%202024-10-03%20125334.png.webp?itok=OROftJNX" alt="Modern House in Lagos">
+                <h3>Modern House in Lagos</h3>
+                <p>₦85,000,000 • 4 Beds • 3 Baths</p>
+                <p>Victoria Island, Lagos</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <div class="property-card" data-location="lagos" data-type="land" data-price="60000000">
+                <img src="https://images.privateproperty.com.ng/large/prime-land-for-sale-in-lekki-phase-1-ggOQlW6ZDhhJ8smmN2C9.jpg" alt="Prime Land in Lagos">
+                <h3>Prime Land in Lagos</h3>
+                <p>₦60,000,000 • 600 sqm</p>
+                <p>Banana Island, Lagos</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <!-- Abuja Listings -->
+            <div class="property-card" data-location="abuja" data-type="apartment" data-price="40000000">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/373041389.jpg?k=8ab4e185c3ed21d796a0b5ad0d3a4ef5e678c4a6f977b44713a6e8fb085f4af1&o=&hp=1" alt="Apartment in Abuja">
+                <h3>Elegant Apartment in Abuja</h3>
+                <p>₦40,000,000 • 3 Beds • 2 Baths</p>
+                <p>Maitama, Abuja</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <div class="property-card" data-location="abuja" data-type="house" data-price="110000000">
+                <img src="https://pbs.twimg.com/profile_images/1286339668506824708/x5lnrlqr_400x400.jpg" alt="Luxury House in Abuja">
+                <h3>Luxury House in Abuja</h3>
+                <p>₦110,000,000 • 5 Beds • 4 Baths</p>
+                <p>Asokoro, Abuja</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <div class="property-card" data-location="abuja" data-type="land" data-price="75000000">
+                <img src="https://pictures-nigeria.jijistatic.net/165358512_NjIwLTM1NC1kMWFlM2U4ZTJm.webp" alt="Prime Land in Abuja">
+                <h3>Prime Land in Abuja</h3>
+                <p>₦75,000,000 • 1000 sqm</p>
+                <p>Jabi, Abuja</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <!-- Port Harcourt Listings -->
+            <div class="property-card" data-location="port harcourt" data-type="apartment" data-price="35000000">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/607937722.jpg?k=75040ded6e72085b4b6929a7593047b479d64564bf422c9665c644b81ed13645&o=&hp=1" alt="Apartment in Port Harcourt">
+                <h3>Stylish Apartment in Port Harcourt</h3>
+                <p>₦35,000,000 • 2 Beds • 2 Baths</p>
+                <p>GRA, Port Harcourt</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <div class="property-card" data-location="port harcourt" data-type="house" data-price="70000000">
+                <img src="https://luzonlisting.com/wp-content/uploads/2024/04/CONSTRUCTION-Of-A-Modern-Soft-4BEDROOM-DUPLEX-@PORT-HARCOURT-Properties-16-Nigeria-720x600.jpg" alt="Spacious House in Port Harcourt">
+                <h3>Spacious House in Port Harcourt</h3>
+                <p>₦70,000,000 • 4 Beds • 3 Baths</p>
+                <p>Trans-Amadi, Port Harcourt</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <div class="property-card" data-location="port harcourt" data-type="land" data-price="55000000">
+                <img src="https://images.privateproperty.com.ng/large/massive-land-jetty-fLtXUocN18tOXZxvvd4z.jpg" alt="Land in Port Harcourt">
+                <h3>Commercial Land in Port Harcourt</h3>
+                <p>₦55,000,000 • 800 sqm</p>
+                <p>Rumuola, Port Harcourt</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <!-- Kano Listings -->
+            <div class="property-card" data-location="kano" data-type="apartment" data-price="25000000">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-798690872106488536/original/c44b8020-817a-4e99-874c-876a88ef29ce.jpeg" alt="Apartment in Kano">
+                <h3>Modern Apartment in Kano</h3>
+                <p>₦25,000,000 • 3 Beds • 2 Baths</p>
+                <p>Nasarawa GRA, Kano</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <div class="property-card" data-location="kano" data-type="house" data-price="50000000">
+                <img src="https://real-estate-nigeria.beforward.jp/wp-content/uploads/2024/03/pmthomes-20210927-0144.jpg" alt="House in Kano">
+                <h3>Beautiful House in Kano</h3>
+                <p>₦50,000,000 • 4 Beds • 3 Baths</p>
+                <p>Hotoro, Kano</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+            <div class="property-card" data-location="kano" data-type="land" data-price="40000000">
+                <img src="https://pictures-nigeria.jijistatic.net/163523399_MzAwLTM3NS00MDAwMjU0NDJl.webp" alt="Land in Kano">
+                <h3>Residential Land in Kano</h3>
+                <p>₦40,000,000 • 500 sqm</p>
+                <p>Gidan Kwano, Kano</p>
+                <a href="speak-to-agent.html"><button class="view-details">Start Your Inquiry</button></a>
+            </div>
+    
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="explore-neighborhood.html"> Explore</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Explore More</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="footer-socials">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates on real estate trends.</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Realto. All rights reserved.</p>
+    </footer>
+    <script src='buy.js'></script>
+</body>
+</html>

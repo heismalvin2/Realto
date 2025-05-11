@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realto | Home</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> ~Realto~ </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="explore-neighborhood.html"> Explore</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="agent.html">Agents</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-banner">
+        <div class="contact-banner-content">
+            <h1>Get in Touch</h1>
+            <p>We’re here to help you with all your real estate needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper fade-in">
+                <div class="contact-info slide-in-left">
+                    <h2>Contact Information</h2>
+                    <p>Reach out to us via phone, email, or visit our office.</p>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+234 123 456 7890</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@realto.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Real Estate Ave, Lagos, Nigeria</span>
+                    </div>
+                </div>
+                
+                <div class="contact-form slide-in-right">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map Embed -->
+    <section class="map-section zoom-in">
+        <div class="container">
+            <h2>Find Us</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2763661136387!2d3.3627218735039537!3d6.486644423593598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c76ba123b97%3A0x1830320de955ab71!2sNIIT%20Surulere!5e0!3m2!1sen!2sng!4v1740097990447!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="explore-neighborhood.html"> Explore</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Explore More</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="footer-socials">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates on real estate trends.</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Realto. All rights reserved.</p>
+    </footer>
+    <script src='contact.js'></script>
+</body>
+</html>

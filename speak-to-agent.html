@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realto | Home</title>
+    <link rel="stylesheet" href="speak-to-agent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">~Realto~</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="explore-neighborhood.html"> Explore</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="agent.html">Agents</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="agent-container">
+        <!-- Agent Image (Separate from Form) -->
+        <div class="agent-box">
+            <img src="images/business-woman-pointing-copyspace-isolated-white-wall_396254-76-removebg-preview.png" alt="Real Estate Agent">
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-box">
+            <h2>Speak to an Agent</h2>
+            <p>Buying a property is a big decision! Our agents are here to guide you every step of the way.</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Hello, I’m interested in learning more about available properties. Please contact me with more details. Thank you!"></textarea>
+                </div>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="explore-neighborhood.html"> Explore</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Explore More</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="footer-socials">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates on real estate trends.</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Realto. All rights reserved.</p>
+    </footer>
+    <script src='speak-to-agent.js'></script>
+</body>
+</html>
